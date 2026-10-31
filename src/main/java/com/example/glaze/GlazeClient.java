@@ -1,6 +1,7 @@
 package com.example.glaze;
 
 import com.example.glaze.core.*;
+import com.example.glaze.core.Module;
 import com.example.glaze.data.ExplorationData;
 import com.example.glaze.data.Waypoint;
 import com.example.glaze.data.WaypointManager;
