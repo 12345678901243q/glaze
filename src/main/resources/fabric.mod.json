@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "glaze",
+  "version": "${version}",
+  "name": "Glaze Client",
+  "description": "Modular Fabric client: passive PvP info HUD and exploration tools.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.glaze.GlazeClient"] },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "key.category.glaze.main": "Glaze Client",
+  "key.glaze.open_gui": "Open Glaze GUI",
+  "key.glaze.module.armor_hud": "Toggle Armor HUD",
+  "key.glaze.module.totem_tracker": "Toggle Totem Tracker",
+  "key.glaze.module.supplies": "Toggle Supplies",
+  "key.glaze.module.attack_cooldown": "Toggle Attack Cooldown",
+  "key.glaze.module.coordinates": "Toggle Coordinates",
+  "key.glaze.module.terrain_info": "Toggle Terrain Info",
+  "key.glaze.module.waypoints": "Toggle Waypoints",
+  "key.glaze.module.radar": "Toggle Radar",
+  "key.glaze.module.exploration_tracker": "Toggle Exploration Tracker"
+}
