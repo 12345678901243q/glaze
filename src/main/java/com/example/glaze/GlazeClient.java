@@ -12,7 +12,7 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements;
@@ -38,11 +38,11 @@ public class GlazeClient implements ClientModInitializer {
         ConfigManager.init();
 
         KeyMapping.Category category = KeyMapping.Category.register(Identifier.fromNamespaceAndPath("glaze", "main"));
-        KeyMapping openKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
+        KeyMapping openKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.glaze.open_gui", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_RIGHT_SHIFT, category));
         for (Module m : Modules.ALL) {
             // Unbound by default; bind them in Options > Controls (or the Keybinds button in the GUI).
-            MODULE_KEYS.put(m, KeyMappingHelper.registerKeyMapping(new KeyMapping(
+            MODULE_KEYS.put(m, KeyBindingHelper.registerKeyBinding(new KeyMapping(
                     "key.glaze.module." + m.keySlug(), InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, category)));
         }
 
