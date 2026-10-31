@@ -1,6 +1,7 @@
 package com.example.glaze.gui;
 
 import com.example.glaze.core.*;
+import com.example.glaze.core.Module;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
